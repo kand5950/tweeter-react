@@ -1,8 +1,10 @@
 function TweetForm(){
+    const placeholder = "What are you humming about?"
+
     return (
         <section class="newtweet">
       <form method="post" action="/tweets" class="newtweet__form">
-        <textarea class="form__textarea" name="text" placeholder="What are you humming about?"></textarea>
+        <textarea class="form__textarea" name="text" placeholder={placeholder}></textarea>
         <input type="submit" value="Tweet" class="form__input"></input>
         <span class="form__counter">140</span>
       </form>
