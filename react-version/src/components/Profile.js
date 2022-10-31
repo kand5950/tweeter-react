@@ -1,12 +1,16 @@
 function Profile(){
+    const firstname = "Amy"
+    const lastname = "Mansell"
+    const avatar = "/profile-hex.png"
+
     return (
         <aside>
-        <div class="profile">
-          <img class="profile__image" src="./profile-hex.png"></img>
+        <div className="profile">
+          <img className="profile__image" src={avatar}></img>
         </div>
         <br />
-        <div class="profile__name">
-          <h2><span class="profile--bold">Amy</span> Mansell</h2>
+        <div className="profile__name">
+          <h2><span className="profile--bold">{firstname}</span> {lastname}</h2>
         </div>
       </aside>
     );
